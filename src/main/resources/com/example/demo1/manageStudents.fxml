@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5f5dc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.StudentsManagementController">
+    <Text layoutX="50.0" layoutY="30.0" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-fill: #6a5acd;" text="Manage Students Page" />
+
+    <VBox fx:id="studentsVBox" layoutX="50.0" layoutY="70.0" spacing="15.0" style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #6a5acd; -fx-border-width: 2;" />
+
+    <Button fx:id="submitAttendanceButton" layoutX="300.0" layoutY="92.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #6a5acd; -fx-text-fill: white; -fx-padding: 10 20; -fx-background-radius: 5; -fx-border-radius: 5;" text="Submit Attendance" onAction="#handleSubmitAttendance" />
+
+    <Button fx:id="returnButton" layoutX="293.0" layoutY="165.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #5bc0de; -fx-text-fill: white; -fx-padding: 10 20; -fx-background-radius: 5; -fx-border-radius: 5;" text="Return to Main Menu" onAction="#handleReturnToMainMenu"/>
+</AnchorPane>

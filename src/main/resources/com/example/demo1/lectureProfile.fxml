@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #e0f7fa;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.LecturerProfileController">
+    <Text layoutX="50.0" layoutY="30.0" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-fill: #00796b;" text="Lecturer Profile Page" />
+
+    <VBox layoutX="87.0" layoutY="46.0" prefHeight="300.0" prefWidth="370.0" spacing="15.0" style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #00796b; -fx-border-width: 2;">
+        <!-- Username Edit -->
+        <Text style="-fx-font-size: 18; -fx-text-fill: #333333;" text="Username:" />
+        <TextField fx:id="usernameField" promptText="Enter Username" style="-fx-font-size: 16; -fx-text-fill: #333333;" />
+        
+        <!-- Name Edit -->
+        <Text style="-fx-font-size: 18; -fx-text-fill: #333333;" text="Name:" />
+        <TextField fx:id="nameField" promptText="Enter Name" style="-fx-font-size: 16; -fx-text-fill: #333333;" />
+
+        <!-- Role Edit -->
+        <Text style="-fx-font-size: 18; -fx-text-fill: #333333;" text="Role:" />
+        <TextField fx:id="roleField" promptText="Enter Role" style="-fx-font-size: 16; -fx-text-fill: #333333;" />
+
+        <!-- Module Taught Edit (TextField) -->
+        <Text style="-fx-font-size: 18; -fx-text-fill: #333333;" text="Module Taught:" />
+        <TextField fx:id="moduleField" promptText="Enter Module" style="-fx-font-size: 16; -fx-text-fill: #333333;" />
+    </VBox>
+
+    <Button fx:id="saveButton" layoutX="87.0" layoutY="448.0" onAction="#handleSaveProfile" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #5bc0de; -fx-text-fill: white; -fx-padding: 10 20; -fx-background-radius: 5; -fx-border-radius: 5;" text="Save Profile" />
+
+    <Button fx:id="returnButton" layoutX="257.0" layoutY="447.0" onAction="#handleReturn" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-background-color: #5bc0de; -fx-text-fill: white; -fx-padding: 10 20; -fx-background-radius: 5; -fx-border-radius: 5;" text="Return to Dashboard" />
+</AnchorPane>
